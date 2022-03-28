@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <title>sign-in/up page</title>
+</head>
+<body style="text-align:center">
+<div class="login-box login-box1">
+<h2>don't have a user? sign up here!</h2>
+<form action="http://127.0.0.1:5000/main" method="post">
+    <div class="user-box">
+    <input type="number" name="id"/>
+        <label>ID</label>
+    </div>
+    <div class="user-box">
+    <input type="text" name="name"/>
+        <label>User Name</label>
+    </div>
+    <div class="user-box">
+    <input type="text" name="password"/>
+        <label>Password</label>
+    </div>
+    <button type="submit">submit</button>
+</form>
+</div>
+<div class="login-box login-box2">
+<h2>have a user? sign in here!</h2>
+<form action="http://127.0.0.1:5000/main" method="post">
+    <div class="user-box">
+    <input type="text" name="name"/>
+        <label>User Name</label>
+    </div>
+    <div class="user-box">
+    <input type="text" name="password"/>
+        <label>Password</label>
+    </div>
+    <button type="submit">submit</button>
+</form>
+</div>
+</body>
+</html>

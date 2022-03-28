@@ -1,0 +1,427 @@
+2022-03-17 20:48:09,754::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-17 20:48:50,767::INFO::the user is in the home page
+2022-03-17 20:48:50,782::INFO::127.0.0.1 - - [17/Mar/2022 20:48:50] "GET / HTTP/1.1" 200 -
+2022-03-17 20:48:51,092::INFO::127.0.0.1 - - [17/Mar/2022 20:48:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-17 20:48:58,573::INFO::user enter name successfully
+2022-03-17 20:48:58,573::INFO::user enter password successfully
+2022-03-17 20:48:58,582::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-17 20:48:58,582::INFO::user entered the right password now he will go inside the website
+2022-03-17 20:48:58,587::INFO::127.0.0.1 - - [17/Mar/2022 20:48:58] "POST /main HTTP/1.1" 200 -
+2022-03-17 20:49:02,335::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-17 20:49:02,339::INFO::127.0.0.1 - - [17/Mar/2022 20:49:02] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-17 20:49:10,783::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-17 20:49:10,789::INFO::127.0.0.1 - - [17/Mar/2022 20:49:10] "POST /chose.html HTTP/1.1" 200 -
+2022-03-17 21:11:34,631::INFO::the user is in the home page
+2022-03-17 21:11:34,633::INFO::127.0.0.1 - - [17/Mar/2022 21:11:34] "GET / HTTP/1.1" 200 -
+2022-03-17 21:11:34,803::INFO::127.0.0.1 - - [17/Mar/2022 21:11:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-17 21:13:00,836::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-17 21:13:15,985::INFO::the user is in the home page
+2022-03-17 21:13:16,001::INFO::127.0.0.1 - - [17/Mar/2022 21:13:16] "GET / HTTP/1.1" 200 -
+2022-03-17 21:13:16,115::INFO::127.0.0.1 - - [17/Mar/2022 21:13:16] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2022-03-18 18:58:44,864::INFO::the user is in the home page
+2022-03-18 18:58:44,868::INFO::127.0.0.1 - - [18/Mar/2022 18:58:44] "GET / HTTP/1.1" 200 -
+2022-03-18 18:58:44,988::INFO::127.0.0.1 - - [18/Mar/2022 18:58:44] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2022-03-18 18:58:45,069::INFO::127.0.0.1 - - [18/Mar/2022 18:58:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-18 18:58:49,632::INFO::user enter name successfully
+2022-03-18 18:58:49,632::INFO::user enter password successfully
+2022-03-18 18:58:49,639::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 18:58:49,640::ERROR::Exception on /main [POST]
+Traceback (most recent call last):
+  File "C:\Users\Alon\PycharmProjects\project1\venv\finalprojecgt1\alonFlask.py", line 34, in main_page
+    user_id = request.form['id']
+  File "C:\Users\Alon\PycharmProjects\project1\venv\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alon\PycharmProjects\project1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Alon\PycharmProjects\project1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Alon\PycharmProjects\project1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Alon\PycharmProjects\project1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Alon\PycharmProjects\project1\venv\finalprojecgt1\alonFlask.py", line 41, in main_page
+    if user_real_password[0][0] != user_password:
+IndexError: list index out of range
+2022-03-18 18:58:57,726::INFO::127.0.0.1 - - [18/Mar/2022 18:58:57] "[35m[1mPOST /main HTTP/1.1[0m" 500 -
+2022-03-18 19:06:44,625::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:07:10,667::INFO::the user is in the home page
+2022-03-18 19:07:10,678::INFO::127.0.0.1 - - [18/Mar/2022 19:07:10] "GET / HTTP/1.1" 200 -
+2022-03-18 19:07:10,777::INFO::127.0.0.1 - - [18/Mar/2022 19:07:10] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:07:10,860::INFO::127.0.0.1 - - [18/Mar/2022 19:07:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-18 19:12:03,876::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:12:17,915::INFO::the user is in the home page
+2022-03-18 19:12:17,948::INFO::127.0.0.1 - - [18/Mar/2022 19:12:17] "GET / HTTP/1.1" 200 -
+2022-03-18 19:12:18,051::INFO::127.0.0.1 - - [18/Mar/2022 19:12:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:12:18,101::INFO::127.0.0.1 - - [18/Mar/2022 19:12:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-18 19:12:36,233::INFO::user enter name successfully
+2022-03-18 19:12:36,233::INFO::user enter password successfully
+2022-03-18 19:12:36,235::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:12:36,235::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:12:36,242::INFO::127.0.0.1 - - [18/Mar/2022 19:12:36] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:12:36,255::INFO::127.0.0.1 - - [18/Mar/2022 19:12:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:20:49,023::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:21:05,701::INFO::the user is in the home page
+2022-03-18 19:21:05,717::INFO::127.0.0.1 - - [18/Mar/2022 19:21:05] "GET / HTTP/1.1" 200 -
+2022-03-18 19:21:05,857::INFO::127.0.0.1 - - [18/Mar/2022 19:21:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:21:16,412::INFO::user enter name successfully
+2022-03-18 19:21:16,412::INFO::user enter password successfully
+2022-03-18 19:21:16,414::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:21:16,414::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:21:16,420::INFO::127.0.0.1 - - [18/Mar/2022 19:21:16] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:21:16,435::INFO::127.0.0.1 - - [18/Mar/2022 19:21:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:31:10,350::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:31:30,897::INFO::the user is in the home page
+2022-03-18 19:31:30,928::INFO::127.0.0.1 - - [18/Mar/2022 19:31:30] "GET / HTTP/1.1" 200 -
+2022-03-18 19:31:31,006::INFO::127.0.0.1 - - [18/Mar/2022 19:31:31] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:31:40,958::INFO::user enter name successfully
+2022-03-18 19:31:40,958::INFO::user enter password successfully
+2022-03-18 19:31:40,959::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:31:40,959::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:31:40,963::INFO::127.0.0.1 - - [18/Mar/2022 19:31:40] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:31:40,975::INFO::127.0.0.1 - - [18/Mar/2022 19:31:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:35:43,614::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:36:06,120::INFO::the user is in the home page
+2022-03-18 19:36:06,142::INFO::127.0.0.1 - - [18/Mar/2022 19:36:06] "GET / HTTP/1.1" 200 -
+2022-03-18 19:36:06,269::INFO::127.0.0.1 - - [18/Mar/2022 19:36:06] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:36:17,645::INFO::user enter name successfully
+2022-03-18 19:36:17,645::INFO::user enter password successfully
+2022-03-18 19:36:17,646::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:36:17,647::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:36:17,655::INFO::127.0.0.1 - - [18/Mar/2022 19:36:17] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:36:17,673::INFO::127.0.0.1 - - [18/Mar/2022 19:36:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:37:40,598::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:37:55,601::INFO::the user is in the home page
+2022-03-18 19:37:55,621::INFO::127.0.0.1 - - [18/Mar/2022 19:37:55] "GET / HTTP/1.1" 200 -
+2022-03-18 19:37:55,713::INFO::127.0.0.1 - - [18/Mar/2022 19:37:55] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:38:04,373::INFO::user enter name successfully
+2022-03-18 19:38:04,374::INFO::user enter password successfully
+2022-03-18 19:38:04,375::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:38:04,375::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:38:04,380::INFO::127.0.0.1 - - [18/Mar/2022 19:38:04] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:38:04,393::INFO::127.0.0.1 - - [18/Mar/2022 19:38:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:41:01,319::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:41:14,943::INFO::the user is in the home page
+2022-03-18 19:41:14,953::INFO::127.0.0.1 - - [18/Mar/2022 19:41:14] "GET / HTTP/1.1" 200 -
+2022-03-18 19:41:15,015::INFO::127.0.0.1 - - [18/Mar/2022 19:41:15] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:41:20,019::INFO::user enter name successfully
+2022-03-18 19:41:20,019::INFO::user enter password successfully
+2022-03-18 19:41:20,022::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:41:20,022::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:41:20,031::INFO::127.0.0.1 - - [18/Mar/2022 19:41:20] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:41:20,046::INFO::127.0.0.1 - - [18/Mar/2022 19:41:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:45:25,381::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:45:39,936::INFO::the user is in the home page
+2022-03-18 19:45:39,948::INFO::127.0.0.1 - - [18/Mar/2022 19:45:39] "GET / HTTP/1.1" 200 -
+2022-03-18 19:45:40,037::INFO::127.0.0.1 - - [18/Mar/2022 19:45:40] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:45:44,566::INFO::user enter name successfully
+2022-03-18 19:45:44,566::INFO::user enter password successfully
+2022-03-18 19:45:44,566::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:45:44,567::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:45:44,570::INFO::127.0.0.1 - - [18/Mar/2022 19:45:44] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:45:44,581::INFO::127.0.0.1 - - [18/Mar/2022 19:45:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:46:50,932::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:47:01,439::INFO::the user is in the home page
+2022-03-18 19:47:01,464::INFO::127.0.0.1 - - [18/Mar/2022 19:47:01] "GET / HTTP/1.1" 200 -
+2022-03-18 19:47:01,552::INFO::127.0.0.1 - - [18/Mar/2022 19:47:01] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:47:07,072::INFO::user enter name successfully
+2022-03-18 19:47:07,073::INFO::user enter password successfully
+2022-03-18 19:47:07,073::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:47:07,074::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:47:07,080::INFO::127.0.0.1 - - [18/Mar/2022 19:47:07] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:47:07,092::INFO::127.0.0.1 - - [18/Mar/2022 19:47:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:50:19,546::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:51:35,398::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:51:48,702::INFO::the user is in the home page
+2022-03-18 19:51:48,712::INFO::127.0.0.1 - - [18/Mar/2022 19:51:48] "GET / HTTP/1.1" 200 -
+2022-03-18 19:51:48,847::INFO::127.0.0.1 - - [18/Mar/2022 19:51:48] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 19:51:52,698::INFO::user enter name successfully
+2022-03-18 19:51:52,698::INFO::user enter password successfully
+2022-03-18 19:51:52,699::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:51:52,699::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:51:52,705::INFO::127.0.0.1 - - [18/Mar/2022 19:51:52] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:51:52,720::INFO::127.0.0.1 - - [18/Mar/2022 19:51:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:51:55,973::INFO::127.0.0.1 - - [18/Mar/2022 19:51:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:55:09,135::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 19:55:41,026::INFO::the user is in the home page
+2022-03-18 19:55:41,040::INFO::127.0.0.1 - - [18/Mar/2022 19:55:41] "GET / HTTP/1.1" 200 -
+2022-03-18 19:55:41,101::INFO::127.0.0.1 - - [18/Mar/2022 19:55:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:55:46,176::INFO::user enter name successfully
+2022-03-18 19:55:46,176::INFO::user enter password successfully
+2022-03-18 19:55:46,177::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 19:55:46,177::INFO::user entered the right password now he will go inside the website
+2022-03-18 19:55:46,189::INFO::127.0.0.1 - - [18/Mar/2022 19:55:46] "POST /main HTTP/1.1" 200 -
+2022-03-18 19:55:46,204::INFO::127.0.0.1 - - [18/Mar/2022 19:55:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 19:55:50,330::INFO::127.0.0.1 - - [18/Mar/2022 19:55:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:03:20,723::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:03:40,759::INFO::the user is in the home page
+2022-03-18 20:03:40,769::INFO::127.0.0.1 - - [18/Mar/2022 20:03:40] "GET / HTTP/1.1" 200 -
+2022-03-18 20:03:40,844::INFO::127.0.0.1 - - [18/Mar/2022 20:03:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:03:46,499::INFO::user enter name successfully
+2022-03-18 20:03:46,500::INFO::user enter password successfully
+2022-03-18 20:03:46,502::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:03:46,502::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:03:46,508::INFO::127.0.0.1 - - [18/Mar/2022 20:03:46] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:03:46,518::INFO::127.0.0.1 - - [18/Mar/2022 20:03:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:03:50,996::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:03:51,000::INFO::127.0.0.1 - - [18/Mar/2022 20:03:51] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:09:15,350::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:09:29,605::INFO::the user is in the home page
+2022-03-18 20:09:29,622::INFO::127.0.0.1 - - [18/Mar/2022 20:09:29] "GET / HTTP/1.1" 200 -
+2022-03-18 20:09:29,710::INFO::127.0.0.1 - - [18/Mar/2022 20:09:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:09:36,215::INFO::user enter name successfully
+2022-03-18 20:09:36,215::INFO::user enter password successfully
+2022-03-18 20:09:36,218::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:09:36,218::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:09:36,223::INFO::127.0.0.1 - - [18/Mar/2022 20:09:36] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:09:36,235::INFO::127.0.0.1 - - [18/Mar/2022 20:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:09:39,864::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:09:39,870::INFO::127.0.0.1 - - [18/Mar/2022 20:09:39] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:09:39,886::INFO::127.0.0.1 - - [18/Mar/2022 20:09:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:11:48,722::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:12:02,209::INFO::the user is in the home page
+2022-03-18 20:12:02,219::INFO::127.0.0.1 - - [18/Mar/2022 20:12:02] "GET / HTTP/1.1" 200 -
+2022-03-18 20:12:02,304::INFO::127.0.0.1 - - [18/Mar/2022 20:12:02] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 20:12:05,709::INFO::user enter name successfully
+2022-03-18 20:12:05,709::INFO::user enter password successfully
+2022-03-18 20:12:05,710::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:12:05,710::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:12:05,716::INFO::127.0.0.1 - - [18/Mar/2022 20:12:05] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:12:05,732::INFO::127.0.0.1 - - [18/Mar/2022 20:12:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:12:09,260::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:12:09,265::INFO::127.0.0.1 - - [18/Mar/2022 20:12:09] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:12:09,278::INFO::127.0.0.1 - - [18/Mar/2022 20:12:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:13:06,940::INFO::127.0.0.1 - - [18/Mar/2022 20:13:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:15:05,095::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:15:18,321::INFO::the user is in the home page
+2022-03-18 20:15:18,338::INFO::127.0.0.1 - - [18/Mar/2022 20:15:18] "GET / HTTP/1.1" 200 -
+2022-03-18 20:15:18,419::INFO::127.0.0.1 - - [18/Mar/2022 20:15:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:15:24,487::INFO::user enter name successfully
+2022-03-18 20:15:24,487::INFO::user enter password successfully
+2022-03-18 20:15:24,488::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:15:24,488::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:15:24,495::INFO::127.0.0.1 - - [18/Mar/2022 20:15:24] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:15:24,508::INFO::127.0.0.1 - - [18/Mar/2022 20:15:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:15:27,065::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:15:27,069::INFO::127.0.0.1 - - [18/Mar/2022 20:15:27] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:15:27,084::INFO::127.0.0.1 - - [18/Mar/2022 20:15:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:16:08,860::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:16:51,235::INFO::the user is in the home page
+2022-03-18 20:16:51,255::INFO::127.0.0.1 - - [18/Mar/2022 20:16:51] "GET / HTTP/1.1" 200 -
+2022-03-18 20:16:51,373::INFO::127.0.0.1 - - [18/Mar/2022 20:16:51] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 20:17:02,812::INFO::user enter name successfully
+2022-03-18 20:17:02,813::INFO::user enter password successfully
+2022-03-18 20:17:02,814::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:17:02,815::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:17:02,821::INFO::127.0.0.1 - - [18/Mar/2022 20:17:02] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:17:02,832::INFO::127.0.0.1 - - [18/Mar/2022 20:17:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:17:05,515::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:17:05,521::INFO::127.0.0.1 - - [18/Mar/2022 20:17:05] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:17:05,537::INFO::127.0.0.1 - - [18/Mar/2022 20:17:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:17:27,769::INFO::127.0.0.1 - - [18/Mar/2022 20:17:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:22:19,057::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:22:32,621::INFO::the user is in the home page
+2022-03-18 20:22:32,633::INFO::127.0.0.1 - - [18/Mar/2022 20:22:32] "GET / HTTP/1.1" 200 -
+2022-03-18 20:22:32,717::INFO::127.0.0.1 - - [18/Mar/2022 20:22:32] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-18 20:22:39,021::INFO::user enter name successfully
+2022-03-18 20:22:39,021::INFO::user enter password successfully
+2022-03-18 20:22:39,023::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:22:39,023::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:22:39,031::INFO::127.0.0.1 - - [18/Mar/2022 20:22:39] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:22:39,045::INFO::127.0.0.1 - - [18/Mar/2022 20:22:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:22:41,880::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:22:41,884::INFO::127.0.0.1 - - [18/Mar/2022 20:22:41] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:22:41,897::INFO::127.0.0.1 - - [18/Mar/2022 20:22:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:28:36,597::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-18 20:28:36,602::INFO::127.0.0.1 - - [18/Mar/2022 20:28:36] "POST /chose.html HTTP/1.1" 200 -
+2022-03-18 20:32:16,972::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:32:31,628::INFO::the user is in the home page
+2022-03-18 20:32:31,643::INFO::127.0.0.1 - - [18/Mar/2022 20:32:31] "GET / HTTP/1.1" 200 -
+2022-03-18 20:32:31,810::INFO::127.0.0.1 - - [18/Mar/2022 20:32:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:32:36,896::INFO::user enter name successfully
+2022-03-18 20:32:36,896::INFO::user enter password successfully
+2022-03-18 20:32:36,900::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:32:36,900::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:32:36,905::INFO::127.0.0.1 - - [18/Mar/2022 20:32:36] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:32:36,917::INFO::127.0.0.1 - - [18/Mar/2022 20:32:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:32:39,399::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:32:39,404::INFO::127.0.0.1 - - [18/Mar/2022 20:32:39] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:32:39,420::INFO::127.0.0.1 - - [18/Mar/2022 20:32:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:32:44,303::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-18 20:32:44,306::INFO::127.0.0.1 - - [18/Mar/2022 20:32:44] "POST /chose.html HTTP/1.1" 200 -
+2022-03-18 20:32:44,318::INFO::127.0.0.1 - - [18/Mar/2022 20:32:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:34:10,101::INFO::127.0.0.1 - - [18/Mar/2022 20:34:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:38:36,680::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:39:32,560::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:40:02,026::INFO::the user is in the home page
+2022-03-18 20:40:02,045::INFO::127.0.0.1 - - [18/Mar/2022 20:40:02] "GET / HTTP/1.1" 200 -
+2022-03-18 20:40:02,186::INFO::127.0.0.1 - - [18/Mar/2022 20:40:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:40:08,122::INFO::user enter name successfully
+2022-03-18 20:40:08,125::INFO::user enter password successfully
+2022-03-18 20:40:08,126::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:40:08,126::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:40:08,133::INFO::127.0.0.1 - - [18/Mar/2022 20:40:08] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:40:08,149::INFO::127.0.0.1 - - [18/Mar/2022 20:40:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:40:10,541::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:40:10,545::INFO::127.0.0.1 - - [18/Mar/2022 20:40:10] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:40:10,555::INFO::127.0.0.1 - - [18/Mar/2022 20:40:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:40:14,359::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-18 20:40:14,364::INFO::127.0.0.1 - - [18/Mar/2022 20:40:14] "POST /chose.html HTTP/1.1" 200 -
+2022-03-18 20:40:14,379::INFO::127.0.0.1 - - [18/Mar/2022 20:40:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:40:47,536::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 20:40:57,894::INFO::the user is in the home page
+2022-03-18 20:40:57,908::INFO::127.0.0.1 - - [18/Mar/2022 20:40:57] "GET / HTTP/1.1" 200 -
+2022-03-18 20:40:57,998::INFO::127.0.0.1 - - [18/Mar/2022 20:40:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:41:04,180::INFO::user enter name successfully
+2022-03-18 20:41:04,181::INFO::user enter password successfully
+2022-03-18 20:41:04,183::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 20:41:04,184::INFO::user entered the right password now he will go inside the website
+2022-03-18 20:41:04,190::INFO::127.0.0.1 - - [18/Mar/2022 20:41:04] "POST /main HTTP/1.1" 200 -
+2022-03-18 20:41:04,206::INFO::127.0.0.1 - - [18/Mar/2022 20:41:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:41:06,435::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-18 20:41:06,441::INFO::127.0.0.1 - - [18/Mar/2022 20:41:06] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 20:41:06,458::INFO::127.0.0.1 - - [18/Mar/2022 20:41:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:41:09,967::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-18 20:41:09,970::INFO::127.0.0.1 - - [18/Mar/2022 20:41:09] "POST /chose.html HTTP/1.1" 200 -
+2022-03-18 20:41:09,981::INFO::127.0.0.1 - - [18/Mar/2022 20:41:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:42:01,122::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-18 20:42:01,122::INFO::127.0.0.1 - - [18/Mar/2022 20:42:01] "POST /chose.html HTTP/1.1" 200 -
+2022-03-18 20:42:01,137::INFO::127.0.0.1 - - [18/Mar/2022 20:42:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 20:42:28,691::INFO::there was enough seats on the flight so the ticket bought successfully
+2022-03-18 20:42:28,691::INFO::127.0.0.1 - - [18/Mar/2022 20:42:28] "POST /finish.html HTTP/1.1" 200 -
+2022-03-18 21:21:06,063::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-18 21:21:58,495::INFO::the user is in the home page
+2022-03-18 21:21:58,508::INFO::127.0.0.1 - - [18/Mar/2022 21:21:58] "GET / HTTP/1.1" 200 -
+2022-03-18 21:21:58,614::INFO::127.0.0.1 - - [18/Mar/2022 21:21:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 21:22:03,284::INFO::user enter name successfully
+2022-03-18 21:22:03,285::INFO::user enter password successfully
+2022-03-18 21:22:03,287::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-18 21:22:03,287::INFO::user entered the right password now he will go inside the website
+2022-03-18 21:22:03,297::INFO::127.0.0.1 - - [18/Mar/2022 21:22:03] "POST /main HTTP/1.1" 200 -
+2022-03-18 21:22:03,316::INFO::127.0.0.1 - - [18/Mar/2022 21:22:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-18 21:22:06,977::INFO::the user wants to delete a ticket
+2022-03-18 21:22:06,980::INFO::127.0.0.1 - - [18/Mar/2022 21:22:06] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-18 21:22:06,990::INFO::127.0.0.1 - - [18/Mar/2022 21:22:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 17:37:57,207::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 17:38:08,634::INFO::the user is in the home page
+2022-03-24 17:38:08,680::INFO::127.0.0.1 - - [24/Mar/2022 17:38:08] "GET / HTTP/1.1" 200 -
+2022-03-24 17:38:08,847::INFO::127.0.0.1 - - [24/Mar/2022 17:38:08] "GET /static/style.css HTTP/1.1" 200 -
+2022-03-24 17:38:34,621::INFO::user enter name successfully
+2022-03-24 17:38:34,622::INFO::user enter password successfully
+2022-03-24 17:38:34,638::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 17:38:34,638::INFO::user entered the right password now he will go inside the website
+2022-03-24 17:38:34,655::INFO::127.0.0.1 - - [24/Mar/2022 17:38:34] "POST /main HTTP/1.1" 200 -
+2022-03-24 17:38:34,740::INFO::127.0.0.1 - - [24/Mar/2022 17:38:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:19:11,125::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 18:19:24,536::INFO::the user is in the home page
+2022-03-24 18:19:24,549::INFO::127.0.0.1 - - [24/Mar/2022 18:19:24] "GET / HTTP/1.1" 200 -
+2022-03-24 18:19:24,708::INFO::127.0.0.1 - - [24/Mar/2022 18:19:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:19:34,324::INFO::user enter name successfully
+2022-03-24 18:19:34,324::INFO::user enter password successfully
+2022-03-24 18:19:34,327::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 18:19:34,327::INFO::user entered the right password now he will go inside the website
+2022-03-24 18:19:34,333::INFO::127.0.0.1 - - [24/Mar/2022 18:19:34] "POST /main HTTP/1.1" 200 -
+2022-03-24 18:19:34,362::INFO::127.0.0.1 - - [24/Mar/2022 18:19:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:19:38,440::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-24 18:19:38,446::INFO::127.0.0.1 - - [24/Mar/2022 18:19:38] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-24 18:19:38,465::INFO::127.0.0.1 - - [24/Mar/2022 18:19:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:20:01,122::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-24 18:20:01,125::INFO::127.0.0.1 - - [24/Mar/2022 18:20:01] "POST /chose.html HTTP/1.1" 200 -
+2022-03-24 18:20:01,145::INFO::127.0.0.1 - - [24/Mar/2022 18:20:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:20:18,615::INFO::there was enough seats on the flight so the ticket bought successfully
+2022-03-24 18:20:18,615::INFO::127.0.0.1 - - [24/Mar/2022 18:20:18] "POST /finish.html HTTP/1.1" 200 -
+2022-03-24 18:20:45,813::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 18:20:55,766::INFO::the user is in the home page
+2022-03-24 18:20:55,773::INFO::127.0.0.1 - - [24/Mar/2022 18:20:55] "GET / HTTP/1.1" 200 -
+2022-03-24 18:20:56,014::INFO::127.0.0.1 - - [24/Mar/2022 18:20:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:21:06,801::INFO::user enter name successfully
+2022-03-24 18:21:06,801::INFO::user enter password successfully
+2022-03-24 18:21:06,802::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 18:21:06,802::INFO::user entered the right password now he will go inside the website
+2022-03-24 18:21:06,808::INFO::127.0.0.1 - - [24/Mar/2022 18:21:06] "POST /main HTTP/1.1" 200 -
+2022-03-24 18:21:06,835::INFO::127.0.0.1 - - [24/Mar/2022 18:21:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:21:12,039::INFO::127.0.0.1 - - [24/Mar/2022 18:21:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:24:22,126::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 18:25:27,298::INFO::the user is in the home page
+2022-03-24 18:25:27,307::INFO::127.0.0.1 - - [24/Mar/2022 18:25:27] "GET / HTTP/1.1" 200 -
+2022-03-24 18:25:27,461::INFO::127.0.0.1 - - [24/Mar/2022 18:25:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:25:34,441::INFO::user enter name successfully
+2022-03-24 18:25:34,441::INFO::user enter password successfully
+2022-03-24 18:25:34,442::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 18:25:34,442::INFO::user entered the right password now he will go inside the website
+2022-03-24 18:25:34,448::INFO::127.0.0.1 - - [24/Mar/2022 18:25:34] "POST /main HTTP/1.1" 200 -
+2022-03-24 18:25:34,471::INFO::127.0.0.1 - - [24/Mar/2022 18:25:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:53:47,154::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 18:53:58,999::INFO::the user is in the home page
+2022-03-24 18:53:59,018::INFO::127.0.0.1 - - [24/Mar/2022 18:53:59] "GET / HTTP/1.1" 200 -
+2022-03-24 18:53:59,317::INFO::127.0.0.1 - - [24/Mar/2022 18:53:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:54:08,951::INFO::user enter name successfully
+2022-03-24 18:54:08,951::INFO::user enter password successfully
+2022-03-24 18:54:08,959::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 18:54:08,959::INFO::user entered the right password now he will go inside the website
+2022-03-24 18:54:08,965::INFO::127.0.0.1 - - [24/Mar/2022 18:54:08] "POST /main HTTP/1.1" 200 -
+2022-03-24 18:54:08,998::INFO::127.0.0.1 - - [24/Mar/2022 18:54:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:55:10,196::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 18:55:32,208::INFO::the user is in the home page
+2022-03-24 18:55:32,222::INFO::127.0.0.1 - - [24/Mar/2022 18:55:32] "GET / HTTP/1.1" 200 -
+2022-03-24 18:55:32,302::INFO::127.0.0.1 - - [24/Mar/2022 18:55:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 18:55:35,660::INFO::user enter name successfully
+2022-03-24 18:55:35,660::INFO::user enter password successfully
+2022-03-24 18:55:35,661::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 18:55:35,661::INFO::user entered the right password now he will go inside the website
+2022-03-24 18:55:35,667::INFO::127.0.0.1 - - [24/Mar/2022 18:55:35] "POST /main HTTP/1.1" 200 -
+2022-03-24 18:55:35,691::INFO::127.0.0.1 - - [24/Mar/2022 18:55:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:07:52,275::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 19:08:08,464::INFO::the user is in the home page
+2022-03-24 19:08:08,474::INFO::127.0.0.1 - - [24/Mar/2022 19:08:08] "GET / HTTP/1.1" 200 -
+2022-03-24 19:08:08,623::INFO::127.0.0.1 - - [24/Mar/2022 19:08:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:08:19,121::INFO::user enter name successfully
+2022-03-24 19:08:19,121::INFO::user enter password successfully
+2022-03-24 19:08:19,122::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 19:08:19,122::INFO::user entered the right password now he will go inside the website
+2022-03-24 19:08:19,128::INFO::127.0.0.1 - - [24/Mar/2022 19:08:19] "POST /main HTTP/1.1" 200 -
+2022-03-24 19:08:19,154::INFO::127.0.0.1 - - [24/Mar/2022 19:08:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:08:43,731::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 19:08:59,287::INFO::the user is in the home page
+2022-03-24 19:08:59,297::INFO::127.0.0.1 - - [24/Mar/2022 19:08:59] "GET / HTTP/1.1" 200 -
+2022-03-24 19:08:59,373::INFO::127.0.0.1 - - [24/Mar/2022 19:08:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:09:03,150::INFO::user enter name successfully
+2022-03-24 19:09:03,151::INFO::user enter password successfully
+2022-03-24 19:09:03,152::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 19:09:03,152::INFO::user entered the right password now he will go inside the website
+2022-03-24 19:09:03,157::INFO::127.0.0.1 - - [24/Mar/2022 19:09:03] "POST /main HTTP/1.1" 200 -
+2022-03-24 19:09:03,184::INFO::127.0.0.1 - - [24/Mar/2022 19:09:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:31:01,749::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 19:31:27,277::INFO::the user is in the home page
+2022-03-24 19:31:27,286::INFO::127.0.0.1 - - [24/Mar/2022 19:31:27] "GET / HTTP/1.1" 200 -
+2022-03-24 19:31:27,393::INFO::127.0.0.1 - - [24/Mar/2022 19:31:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:32:14,373::INFO::user enter name successfully
+2022-03-24 19:32:14,373::INFO::user enter password successfully
+2022-03-24 19:32:14,374::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 19:32:14,374::INFO::user entered the right password now he will go inside the website
+2022-03-24 19:32:14,378::INFO::127.0.0.1 - - [24/Mar/2022 19:32:14] "POST /main HTTP/1.1" 200 -
+2022-03-24 19:32:14,412::INFO::127.0.0.1 - - [24/Mar/2022 19:32:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:32:20,141::INFO::the user decided to buy ticket, and we show him where he can fly
+2022-03-24 19:32:20,145::INFO::127.0.0.1 - - [24/Mar/2022 19:32:20] "POST /buy-delete.html HTTP/1.1" 200 -
+2022-03-24 19:32:20,178::INFO::127.0.0.1 - - [24/Mar/2022 19:32:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:32:26,873::INFO::after the user chose where to go, now he can chose a specific flight which is most comftarble to him
+2022-03-24 19:32:26,876::INFO::127.0.0.1 - - [24/Mar/2022 19:32:26] "POST /chose.html HTTP/1.1" 200 -
+2022-03-24 19:32:26,903::INFO::127.0.0.1 - - [24/Mar/2022 19:32:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:32:48,582::INFO::there was enough seats on the flight so the ticket bought successfully
+2022-03-24 19:32:48,583::INFO::127.0.0.1 - - [24/Mar/2022 19:32:48] "POST /finish.html HTTP/1.1" 200 -
+2022-03-24 19:32:48,610::INFO::127.0.0.1 - - [24/Mar/2022 19:32:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:32:59,879::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 19:33:07,594::INFO:: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 19:33:32,629::INFO::the user is in the home page
+2022-03-24 19:33:32,637::INFO::127.0.0.1 - - [24/Mar/2022 19:33:32] "GET / HTTP/1.1" 200 -
+2022-03-24 19:33:32,714::INFO::127.0.0.1 - - [24/Mar/2022 19:33:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-03-24 19:33:37,265::INFO::user enter name successfully
+2022-03-24 19:33:37,265::INFO::user enter password successfully
+2022-03-24 19:33:37,266::INFO::the user already exists, now we want to see if the password that entered and the on in the db are equal
+2022-03-24 19:33:37,266::INFO::user entered the right password now he will go inside the website
+2022-03-24 19:33:37,273::INFO::127.0.0.1 - - [24/Mar/2022 19:33:37] "POST /main HTTP/1.1" 200 -
+2022-03-24 19:33:37,308::INFO::127.0.0.1 - - [24/Mar/2022 19:33:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

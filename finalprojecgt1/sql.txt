@@ -1,0 +1,33 @@
+CREATE TABLE "countries" (
+	"code_AI"	INTEGER,
+	"name"	varchar(20),
+	PRIMARY KEY("code_AI" AUTOINCREMENT)
+);
+
+CREATE TABLE "flights" (
+	"flight_id"	INTEGER,
+	"timestamp"	datetime,
+	"remaing_seats"	INTEGER,
+	"origin_country_id"	INTEGER,
+	"dest_country_id"	INTEGER,
+	FOREIGN KEY("origin_country_id") REFERENCES "countries"("code_AI"),
+	FOREIGN KEY("dest_country_id") REFERENCES "countries"("code_AI"),
+	PRIMARY KEY("flight_id" AUTOINCREMENT)
+);
+
+CREATE TABLE "tickets" (
+	"ticket_id"	INTEGER,
+	"user_id"	INTEGER,
+	"flight_id"	INTEGER,
+	FOREIGN KEY("user_id") REFERENCES "users"("id_AI"),
+	FOREIGN KEY("flight_id") REFERENCES "flights"("flight_id"),
+	PRIMARY KEY("ticket_id" AUTOINCREMENT)
+);
+
+CREATE TABLE "users" (
+	"id_AI"	INTEGER,
+	"fullname"	varchar(20),
+	"password"	varchar(20),
+	"real_id"	varchar(20),
+	PRIMARY KEY("id_AI" AUTOINCREMENT)
+);

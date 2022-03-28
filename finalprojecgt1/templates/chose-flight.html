@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <title>update if bought</title>
+</head>
+<body>
+<h2>chose flights:</h2>
+{% for flight in flights %}
+<h2>id: {{flight[0]}}, date: {{flight[1]}}, remaining seats: {{flight[2]}}</h2>
+{% endfor %}
+<div class="login-box">
+<form action="http://127.0.0.1:5000/finish.html" method="post" style="width:200px;margin-left:auto;margin-right:auto;">
+    <div class="user-box">
+       <input type="text" name="chosen-flight">
+        <label>Flight-ID</label>
+    </div>
+    <div class="user-box">
+        <input type="text" name="id">
+        <label>ID</label>
+    </div>
+    <button type="submit">submit</button>
+</form>
+    </div>
+</body>
+</html>

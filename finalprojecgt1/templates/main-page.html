@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main page</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+<div class="login-box" style="padding:2%">
+<h2>hi {{name}}</h2>
+<h2>you currently have {{flights}} flights</h2>
+{% if flights > 0 %}
+<h2>this table will show your timestamp and where you are flying to</h2>
+    <div class="container">
+<table border="" style="margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px">
+        <tr>
+            <th>date</th>
+            <th>destination</th>
+        </tr>
+        {% for key, value in d.items(): %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+        {% endfor %}
+</table>
+    </div>
+{% endif %}
+ <div class="login-box">
+<form action=" http://127.0.0.1:5000/buy-delete.html" method="post">
+    <h2>write inside the input the word "buy" if you want to buy ticket or "delete" if you want to delete ticket</h2>
+    <div class="user-box">
+    <input type="text" name="choice"/>
+        <label>Buy/Delete</label>
+    </div>
+    <button type="submit">submit</button>
+</form>
+ </div>
+</div>
+</body>
+</html>
